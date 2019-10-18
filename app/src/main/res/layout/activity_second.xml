@@ -15,13 +15,24 @@
         android:text="For each level, " />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Game"
         android:textStyle="bold"
         android:layout_marginTop="400dp"
         android:layout_marginLeft="123dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/second_activity_previous_button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:text="previous"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
         android:textSize="15sp" />
 
 </RelativeLayout>
