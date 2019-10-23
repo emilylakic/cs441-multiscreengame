@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         nextButton = (Button) findViewById(R.id.helpButton);
         question1 = (TextView) findViewById(R.id.gameTitle);
 
-        question1.setText("");
+        question1.setText("Can You Guess The Logo?");
 
         nextButton.setOnClickListener(new View.OnClickListener() {
 
