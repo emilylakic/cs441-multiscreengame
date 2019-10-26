@@ -1,9 +1,12 @@
 package com.example.myapplication.multiscreengame.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.GridView;
 
 public class GridViewAnswerAdapter extends BaseAdapter {
 
@@ -18,21 +21,31 @@ public class GridViewAnswerAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return answerCharacter.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return answerCharacter[position];
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        Button button;
+        if(convertView == null) {
+            button = new Button(context);
+            button.setLayoutParams(new GridView.LayoutParams(85,85));
+            button.setPadding(8,8,8,8);
+            button.setBackgroundColor(Color.DKGRAY);
+            button.setTextColor(Color.YELLOW);
+            button.setText(String.valueOf(answerCharacter[position]));
+        }
+        else
+            button = (Button)convertView;
     }
 }
