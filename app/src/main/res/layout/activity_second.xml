@@ -17,6 +17,20 @@
         android:layout_above="@+id/btnSubmit"
         >
 
+        <Button
+            android:id="@+id/next_button"
+            android:text="Next"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/previous_button"
+            android:text="Previous"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="match_parent"

@@ -28,6 +28,8 @@ public class SecondActivity extends AppCompatActivity {
     public GridViewSuggestAdapter suggestAdapter;
 
     public Button btnSubmit;
+    public Button next_button;
+    public Button previous_button;
 
     public GridView gridViewAnswer,gridViewSuggest;
 
@@ -65,8 +67,6 @@ public class SecondActivity extends AppCompatActivity {
     public char[] answer;
 
     String correct_answer;
-    TextView question2;
-    Button next_button, previous_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +90,7 @@ public class SecondActivity extends AppCompatActivity {
         });*/
     }
     private void initView() {
+
         gridViewAnswer = (GridView)findViewById(R.id.gridViewAnswer);
         gridViewSuggest = (GridView)findViewById(R.id.gridViewSuggest);
 
@@ -97,6 +98,24 @@ public class SecondActivity extends AppCompatActivity {
 
         //Add SetupList Here
         setupList();
+
+        next_button = (Button)findViewById(R.id.next_button);
+        next_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        previous_button = (Button)findViewById(R.id.previous_button);
+        previous_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnSubmit = (Button)findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
