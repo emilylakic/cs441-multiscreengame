@@ -19,14 +19,14 @@
 
         <Button
             android:id="@+id/next_button"
-            android:text="Next"
+            android:text="Instructions"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/previous_button"
-            android:text="Previous"
+            android:text="Main Menu"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

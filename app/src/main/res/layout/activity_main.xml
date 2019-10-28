@@ -23,14 +23,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mainbg" />
+
     <Button
         android:id="@+id/helpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Instructions"
+        android:text="Play Game"
         android:textStyle="bold"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="123dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="152dp"
         android:textSize="15sp" />
 
 </RelativeLayout>
