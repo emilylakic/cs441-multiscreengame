@@ -14,7 +14,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSubmit" />
+        android:layout_above="@+id/btnSubmit"
+        >
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -57,4 +58,4 @@ android:layout_width="match_parent"
 android:layout_height="wrap_content" />
 
 
-    </RelativeLayout>
+</RelativeLayout>

@@ -8,10 +8,11 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 
+import java.util.List;
+
 import com.example.myapplication.multiscreengame.Common.Common;
 import com.example.myapplication.multiscreengame.SecondActivity;
 
-import java.util.List;
 
 public class GridViewSuggestAdapter extends BaseAdapter {
 
