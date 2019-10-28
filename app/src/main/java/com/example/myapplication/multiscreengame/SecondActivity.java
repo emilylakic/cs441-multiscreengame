@@ -130,6 +130,9 @@ public class SecondActivity extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Finish ! This is "+result,Toast.LENGTH_SHORT).show();
                     score++;
+                    Intent intent = new Intent(getApplicationContext(), FourthActivity.class);
+                    intent.putExtra("SCORE", score);
+                    startActivity(intent);
                     //Reset
                     Common.count = 0;
                     Common.user_submit_answer = new char[correct_answer.length()];
