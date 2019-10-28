@@ -18,7 +18,6 @@ public class GridViewAnswerAdapter extends BaseAdapter {
         this.context = context;
     }
 
-
     @Override
     public int getCount() {
         return answerCharacter.length;
@@ -37,7 +36,9 @@ public class GridViewAnswerAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Button button;
-        if(convertView == null) {
+        if(convertView == null)
+        {
+            //Create new button
             button = new Button(context);
             button.setLayoutParams(new GridView.LayoutParams(85,85));
             button.setPadding(8,8,8,8);
@@ -46,6 +47,7 @@ public class GridViewAnswerAdapter extends BaseAdapter {
             button.setText(String.valueOf(answerCharacter[position]));
         }
         else
-            button = (Button)convertView;
+            button=(Button)convertView;
+        return button;
     }
 }
