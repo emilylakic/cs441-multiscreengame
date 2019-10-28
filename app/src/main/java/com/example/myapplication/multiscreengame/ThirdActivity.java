@@ -31,9 +31,7 @@ public class ThirdActivity extends AppCompatActivity {
         // In question1 get the TextView use by findViewById()
         // In TextView set question Answer for message
 
-        question3.setText("Q 3 - How to store heavy structured data in android?\n"
-                + "\n"
-                + "Ans- SQlite database");
+        question3.setText("");
         // Add_button add clicklistener
 
         gotoleaderboard2.setOnClickListener(new View.OnClickListener() {

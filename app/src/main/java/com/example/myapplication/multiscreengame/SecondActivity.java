@@ -35,6 +35,8 @@ public class SecondActivity extends AppCompatActivity {
 
     public ImageView imgViewQuestion;
 
+    int score = 0;
+
     int[] image_list={
 
             R.drawable.blogger,
@@ -127,7 +129,7 @@ public class SecondActivity extends AppCompatActivity {
                 if(result.equals(correct_answer))
                 {
                     Toast.makeText(getApplicationContext(),"Finish ! This is "+result,Toast.LENGTH_SHORT).show();
-
+                    score++;
                     //Reset
                     Common.count = 0;
                     Common.user_submit_answer = new char[correct_answer.length()];
